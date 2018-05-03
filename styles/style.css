@@ -18,16 +18,19 @@ h1{
 .menu{
     display: block;
     text-align: right;
+    background: black;
+    padding: 5px 20px;
     
 }
 .menuElement{
     font-size: 14px;
     text-decoration: none;
-    color:firebrick;
+    color:white;
+    font-weight: bold;
+    padding: 0px 5px;
 }
 .menuElement:hover {
-    color: gray;
-    font-weight: bold;
+    color: gray; 
 }
 p,li {
     font-size: 16px;
@@ -42,7 +45,7 @@ img {
     width: 200px;
     height: 200px;
     display: block;
-    margin: 0 auto;
+    margin-left: 0;
 }
 a{
     cursor: default;
