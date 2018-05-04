@@ -1,9 +1,7 @@
 html {
     font-size: 10px;
     font-family: 'Open Sans', sans-serif;
-    background: #5f2c82;  /* fallback for older browsers */
-    background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: beige;
     cursor: default;
 }
 h1{
@@ -20,10 +18,9 @@ h1{
 .menu{
     display: block;
     text-align: right;
-    background: black;
-    padding: 30px 20px 30px 5px;
+    background: linear-gradient(black,#383838);
+    padding: 20px 20px;
     margin: 0 0 auto 0;
-    background: black;
 }
 .menuElement{
     font-size: 14px;
@@ -38,7 +35,7 @@ h1{
     padding: 2px 9px; /* So that the addition of the border doesn't push other menu elements */
 }
 .menuElement:hover {
-    color: gray; 
+    color: darkgray; 
 }
 p,li {
     font-size: 16px;
