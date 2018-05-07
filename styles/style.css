@@ -2,28 +2,26 @@ html {
     font-size: 10px;
     font-family: 'Open Sans', sans-serif;
     background-color: gainsboro;
-    cursor: default;
     height: 100%;
     margin: 0;
     padding: 0;
+    cursor: default;
 }
-#index{
-    background-image: url(../images/bg.jpg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
+
 h1{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rokkitt', serif;
     font-size: 5vw;
     font-weight: normal;
     margin: 0;
     padding: 20px 0;
+/*
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+*/
 }
 nav{
     display: block;
@@ -32,9 +30,16 @@ nav{
     padding: 20px 20px;
     margin: 0 0 auto 0;
     box-shadow: 0 -6px 10px 5px black;
+    font-size: 1vw;
+    z-index: 100; 
+    position: sticky; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+/*    max-height: 10px;*/
 }
 .navElement{
-    font-size: 14px;
+    font-size:14px;
     text-decoration: none;
     color: black;
     padding: 2px 10px;
@@ -53,6 +58,9 @@ header{
     position: relative;
     text-align: center;
     color: white;
+}
+.headerImage{
+    width: 100%;
 }
 .headerText{
     position: absolute;
