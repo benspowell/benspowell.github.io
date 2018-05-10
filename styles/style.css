@@ -7,7 +7,11 @@ html {
     padding: 0;
     cursor: default;
 }
-
+#middle-initial{
+    font-style: normal;
+    color:aliceblue;
+    text-shadow: 0 0 5 black;
+}
 h1{
     font-family: 'Rokkitt', serif;
     font-size: 4.5vw;
@@ -31,20 +35,33 @@ h1{
     top: 16px;
     left: 16px;
 }
+#face{
+    border-radius: 50%;
+    width: 160px;
+    float: left;
+    margin: 0 25px 0 0;
+}
+
+#profile{
+    padding: 15px;
+    margin: 20px;
+    background-color: white;
+    width: 400px;
+    height: 160px;
+}
 nav{
     display: block;
     text-align: center;
     background: white;/*linear-gradient(black,#383838);*/
     padding: 20px 20px;
     margin: 0 0 auto 0;
-    box-shadow: 0 -6px 10px 5px black;
+    box-shadow: 0 -6px 10px 8px black;
     font-size: 1vw;
     z-index: 100; 
     position: sticky; 
     top: 0; 
     left: 0; 
     right: 0;
-/*    max-height: 10px;*/
 }
 .navElement{
     font-size:14px;
