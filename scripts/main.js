@@ -1,11 +1,29 @@
 var logo = document.querySelector("img[id='logo']");
 
 logo.onmouseover= function(){
-    logo.setAttribute("src","images/logo-reverse.gif");
+    logo.setAttribute("src","images/logo-colors/"+Math.floor(Math.random()*16)+".png");
     setTimeout(function(){
-        logo.setAttribute("src","images/logo-forward.gif");
+        logo.setAttribute("src","images/logo-colors/"+Math.floor(Math.random()*16)+".png");
         setTimeout(function(){
-            logo.setAttribute("src","images/logo-still.gif");
-    }, 2250);
-    }, 2275);
+            logo.setAttribute("src","images/logo-colors/"+Math.floor(Math.random()*16)+".png");
+            setTimeout(function(){
+                logo.setAttribute("src","images/logo-colors/"+Math.floor(Math.random()*16)+".png");
+                setTimeout(function(){
+                    logo.setAttribute("src","images/logo-colors/"+Math.floor(Math.random()*16)+".png");
+                    setTimeout(function(){
+                        logo.setAttribute("src","images/logo-colors/"+Math.floor(Math.random()*16)+".png");
+                        setTimeout(function(){
+                            logo.setAttribute("src","images/logo-colors/"+Math.floor(Math.random()*16)+".png");
+                            setTimeout(function(){
+                                logo.setAttribute("src","images/logo-colors/"+Math.floor(Math.random()*16)+".png");
+                                setTimeout(function(){
+                                    logo.setAttribute("src","images/logo-colors/"+Math.floor(Math.random()*16)+".png");
+    }, 50);
+    }, 50);
+    }, 50);
+    }, 50);
+    }, 50);
+    }, 50);
+    }, 50);
+    }, 50);
 }
