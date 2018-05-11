@@ -1,7 +1,7 @@
 var logo = document.querySelector("img[id='logo']");
 pickLogoColor();
 var icons = document.querySelectorAll("img[id='footer-icon']");
-
+var url = document.querySelector("h1[id='url']");
 function pickLogoColor(){
         logo.setAttribute("src","images/logo-colors/"+Math.floor(Math.random()*16)+".png");
     setTimeout(function(){
@@ -29,6 +29,8 @@ function pickLogoColor(){
     }, 50);
     }, 50);
 }
+
+url.textContent=window.location.href-"http://"
 
 function othersGrey(posInIcons){
     for (j=0; j<icons.length;j++){        
