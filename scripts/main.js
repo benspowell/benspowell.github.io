@@ -66,3 +66,4 @@ for(i = 0; i<icons.length;i++){
 
 
 logo.onmouseover= function(){pickLogoColor();}
+logo.onclick=function(){pickLogoColor();}
