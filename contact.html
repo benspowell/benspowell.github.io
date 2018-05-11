@@ -12,6 +12,28 @@
         <a class="navElement" href="resume.html">RESUME</a>
         <a class="navElement" href="projects.html">PROJECTS</a>
         <a id="current" class="navElement" href="contact.html">CONTACT</a>
-        </nav>     
+        </nav>    
+        
+    <div class="contact">
+        <form action="action_page.php">
+            
+        <label for="name">Name</label>
+        <input type="text" id="name" name="firstname">
+
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+        <option value="" selected disabled hidden>Pick a subject</option>
+        <option value="work">Work</option>
+        <option value="school">School</option>
+        <option value="website">This Website</option>
+        <option value="other">Other</option>
+        </select>
+            
+        <label for="message">Message</label>
+        <textarea id="message" name="message" style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+  </form>
+</div>
     </body>
 </html>

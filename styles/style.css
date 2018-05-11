@@ -37,8 +37,8 @@ h2{
     height; 50px;
     display: inline;
     position: absolute;
-    top: 16px;
-    left: 16px;
+    top: 10px;
+    left: 10px;
 }
 #face{
     border-radius: 50%;
@@ -54,11 +54,18 @@ h2{
     width: 500px;
     height: 180px;
 }
+#about{
+    padding: 15px;
+    margin: 20px;
+    background-color: white;
+    width: 500px;
+    height: 180px;
+}
 nav{
     display: block;
     text-align: center;
     background: white;/*linear-gradient(black,#383838);*/
-    padding: 20px 20px;
+    padding: 15px 20px;
     margin: 0 0 auto 0;
     box-shadow: 0 -6px 10px 8px black;
     font-size: 1vw;
@@ -76,12 +83,28 @@ nav{
     letter-spacing: .5px;
     
 }
+#footer-icon{
+    width: 25px;
+    padding: 2px;
+}
 #current{
     border: 1px solid;
     padding: 2px 9px; /* So that the addition of the border doesn't push other menu elements */
+    cursor: default;
 }
 .navElement:hover {
     color: darkgray; 
+    cursor: default;
+}
+footer{
+    padding: 10px;
+    margin-top: 100px;
+    margin-bottom: 0;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 5px 15px 2px black;
+    background-color:white;
 }
 header{
     width: 100%;
@@ -98,10 +121,6 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-p,li {
-    font-size: 16px;
-    line-height: 2;
-}
 body {
     height: 100%;
     margin: 0;
@@ -112,7 +131,4 @@ body {
     padding: 0 20px 20px 20px;
 */
     margin: 0 auto;
-}
-a{
-    cursor: default;
 }
