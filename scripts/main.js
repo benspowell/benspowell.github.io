@@ -30,7 +30,7 @@ function pickLogoColor(){
     }, 50);
 }
 
-url.textContent=window.location.href-"http://"
+url.textContent=window.location.href;
 
 function othersGrey(posInIcons){
     for (j=0; j<icons.length;j++){        
