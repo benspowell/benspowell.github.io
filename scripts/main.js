@@ -30,7 +30,7 @@ function pickLogoColor(){
     }, 50);
 }
 
-url.textContent=window.location.href;
+//url.textContent=window.location.href;
 
 function othersGrey(posInIcons){
     for (j=0; j<icons.length;j++){        
@@ -50,9 +50,6 @@ var j;
 for(i = 0; i<icons.length;i++){
     icon = icons.item(i);
     icon.setAttribute("pos",i);
-    icon.onmouseover=function(){
-        othersGrey(1);
-    }
     icon.onmouseout=function(){
     for (j=0; j<icons.length;j++){        
             otherIcon=icons.item(j);
@@ -63,6 +60,14 @@ for(i = 0; i<icons.length;i++){
     }
 }
     
+icons.item(0).onmouseover=function(){othersGrey(0);}
+icons.item(1).onmouseover=function(){othersGrey(1);}
+icons.item(2).onmouseover=function(){othersGrey(2);}
+icons.item(3).onmouseover=function(){othersGrey(3);}
+icons.item(4).onmouseover=function(){othersGrey(4);}
+icons.item(5).onmouseover=function(){othersGrey(5);}
+icons.item(6).onmouseover=function(){othersGrey(6);}
+icons.item(7).onmouseover=function(){othersGrey(7);}
 
 
 logo.onmouseover= function(){pickLogoColor();}

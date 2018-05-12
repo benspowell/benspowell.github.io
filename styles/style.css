@@ -97,13 +97,16 @@ nav{
     cursor: default;
 }
 footer{
+    position:fixed;
     padding: 10px;
     margin-top: 100px;
     margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
     position: relative;
     text-align: center;
-    box-shadow: 0 5px 15px 2px black;
+/*    box-shadow: 0 5px 15px 2px black;*/
     background-color:white;
 }
 header{
