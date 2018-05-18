@@ -1,15 +1,11 @@
 html {
-    font-size: 10px;
+    font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     background-color: gainsboro;
     height: 100%;
     margin: 0;
     padding: 0;
     cursor: default;
-}
-#middle-initial{
-    font-style: normal;
-    text-shadow: 0 0 5 black;
 }
 h1{
     font-family: 'Rokkitt', serif;
@@ -64,13 +60,13 @@ h2{
 nav{
     display: block;
     text-align: center;
-    background: white;/*linear-gradient(black,#383838);*/
-    padding: 15px 20px;
+    background: #444444;
+    padding: 15px 0;
     margin: 0 0 auto 0;
-    box-shadow: 0 -6px 10px 8px black;
+    box-shadow: 0 -6px 10px 5px black;
     font-size: 1vw;
     z-index: 100; 
-    position: sticky; 
+/*    position: sticky; */
     top: 0; 
     left: 0; 
     right: 0;
@@ -78,9 +74,11 @@ nav{
 .navElement{
     font-size:14px;
     text-decoration: none;
-    color: black;
-    padding: 2px 10px;
+    font-weight: bold;
+    color: white;
+    padding: 15px 10px;
     letter-spacing: .5px;
+    margin: 0;
     
 }
 #footer-icon{
@@ -88,14 +86,33 @@ nav{
     padding: 2px;
 }
 #current{
+/*
     border: 1px solid;
-    padding: 2px 9px; /* So that the addition of the border doesn't push other menu elements */
+    cursor: default;
+    background-color: aqua;
+*/
+}
+
+@keyframes navFade{
+    0% {
+        background: #444444;
+        border: 1px solid #444444;
+    }
+    
+    100% {
+        background: red;
+        border: 1px solid red;
+    }
+}
+.navElement:hover, .navElement:focus {
+    animation-name: navFade;
+    animation-duration: 0.25s;
+    background-color: red;     
+    padding: 15px 9px;
+    border: 1px solid red;
     cursor: default;
 }
-.navElement:hover {
-    color: darkgray; 
-    cursor: default;
-}
+
 footer{
     position:fixed;
     padding: 10px;
