@@ -1,7 +1,7 @@
 html {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
-    background-color: gainsboro;
+    background-color: #e5e5e5;
 /*    height: 100%;*/
 /*
     margin: 0;
@@ -64,7 +64,7 @@ h2{
 nav{
     display: block;
     text-align: center;
-    background: #444444;
+    background: #383838;
     padding: 15px 0;
     margin: 0 0 auto 0;
     box-shadow: 0 -6px 10px 5px black;
@@ -112,29 +112,34 @@ nav{
     border: 1px solid red;
     cursor: default;
 */
+
 	color:gray;
 }
 
 #current{
 	border: 2px solid;
+	margin: 6px 3px;
 
 }
 #current:hover, #current:focus{
 	color:gray;
 }
 footer{
+	color: white;
+	box-shadow: 0 6px 10px 5px black;
 	position: absolute;
     left: 0;
     bottom: 0;
-    height: 100px;
+    height: 40px;
     width: 100%;
     overflow: hidden;
-	background-color:white;
-	margin-top: 100px;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
+	background-color: #383838;
 	text-align: center;
+}
+footer img{
+	padding: 0;
+	margin-top: 5px;
+	border: 0;
 }
 header{
     width: 100%;
