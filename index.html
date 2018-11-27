@@ -1,48 +1,87 @@
 <!DOCTYPE html>
-<html lang="en" id="index">
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Ben Powell">
-        <meta name="description" content="An online portfolio/homepage for Benjamin Scott Powell, an OSU student in Computer Science & Engineering (CSE). It includes my resume, contact information, as well as descriptions and links to my projects.">
-        <title>Ben Powell</title>
-        <link href="styles/style.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="favicon.ico">
-        <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
-    </head>
-    <body>
-        <nav>
-        <a id="current" class="navElement" href="index.html">HOME</a>
-        <a class="navElement" href="about.html">ABOUT</a>
-        <a class="navElement" href="contact.html">CONTACT</a>
-        <a class="navElement" href="shop.html">SHOP</a>
-        <img id="logo" src="images/logo-colors/9.png">
-        </nav>   
-        <header style="width: 100%">
-            <img  class="headerImage" src="images/index.jpg">
-            <h1 class="headerText" id="url">benspowell.github.io</h1>
-        </header>
-        <div id="profile">
-            <img src="images/Ben.jpg" id="face">
-            <h2>Ben Powell</h2>
-            <h3>The Ohio State University</h3>
-            <h4>Computer Science &amp; Engineering Student <br><br><a href="mailto:benspowell@gmail.com">benspowell@gmail.com</a></h4>
-        </div>
-        <div id="about">
-        
-        </div>
-        <footer style="width:100%">
-            <h5>Thanks for visiting!<br>© 2018 Benjamin Powell. All rights reserved.</h5>
-            
-            <a href="http://facebook.com/benspowell"><img id="footer-icon" src="images/footer/fb-blk.png"></a>
-            <a href="http://instagram.com/benspowell"><img id="footer-icon" src="images/footer/insta-blk.png"></a>
-            <a href="http://open.spotify.com/user/ben-pow"><img id="footer-icon" src="images/footer/spotify-blk.png"></a>
-            <a href="http://github.com/benspowell"><img id="footer-icon" src="images/footer/github-blk.png"></a>
-            <a href="http://linkedin.com/in/benspowell"><img id="footer-icon" src="images/footer/linkedin-blk.png"></a>
-            <a href="mailto:benspowell@gmail.com"><img id="footer-icon" src="images/footer/mail-blk.png"></a>
-            <a href="https://twitter.com/bs_powell"><img id="footer-icon" src="images/footer/twitter-blk.png"></a>
-            <a href="index.html"><img id="footer-icon" src="images/footer/website-blk.png"></a>
-            
-        </footer>
-        <script src="scripts/main.js"></script>
-    </body>
-</html> 
+<html onmousemove="changeLogo()">
+<head>
+<link rel="icon" href="favicon.ico">
+<style>
+    html{
+    background-color: #f9f6f2;
+    }
+    img{
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    main{
+        display: block;
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    a{ 
+        color: #494949;
+        font-family: 'Open Sans', sans-serif;
+        font-size:15px;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 2px 10px;
+        letter-spacing: .5px;
+    }
+    a:hover {
+    color: #c6c6c6;
+    cursor: default;
+    }
+</style>
+<title>Ben S. Powell</title>
+</head>
+<body>
+<img onmouseover="menuAppear()" src="logo-colors/0.png">
+<main></main>
+<script>
+    var logo = document.querySelector("img");
+    
+    var names=["Website","Resume","Downloads"];
+    var links=["http://benspowell.github.io/downloads.html","Benjamin-Powell.pdf","http://benspowell.github.io/home.html"];
+    var linkName,link,p,a,menuUp=false;
+    
+    function changeLogo(){
+        if (!menuUp){
+            logo.setAttribute("src","logo-colors/"+Math.floor(Math.random()*16)+".png");
+        }
+    }
+    
+    function menuAppear(){
+        if (!menuUp){
+            menuUp=true;
+            var main = document.querySelector("main");
+            names.forEach(function (str){
+                a=document.createElement("A");
+                a.setAttribute("href",links.pop());
+                linkName=document.createTextNode(str);
+                a.appendChild(linkName);
+                main.appendChild(a);
+                });
+            fadeIn(main);
+        }
+    }
+    function fadeIn(el) {
+        el.style.opacity = 0;
+
+        var last = +new Date();
+        var tick = function() {
+        el.style.opacity = +el.style.opacity + (new Date() - last) / 400;
+        last = +new Date();
+
+        if (+el.style.opacity < 1) {
+        (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+        }
+    };
+    tick();
+    }
+</script>
+</body>
+</html>
