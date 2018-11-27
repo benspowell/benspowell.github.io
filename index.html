@@ -45,12 +45,12 @@
     var logo = document.querySelector("img");
     
     var names=["Website","Resume","Downloads"];
-    var links=["http://benspowell.github.io/downloads.html","Benjamin-Powell.pdf","http://benspowell.github.io/home.html"];
+    var links=["downloads.html","resources/Benjamin-Powell.pdf","home.html"];
     var linkName,link,p,a,menuUp=false;
     
     function changeLogo(){
         if (!menuUp){
-            logo.setAttribute("src","logo-colors/"+Math.floor(Math.random()*16)+".png");
+            logo.setAttribute("src","images/logo-colors/"+Math.floor(Math.random()*16)+".png");
         }
     }
     
