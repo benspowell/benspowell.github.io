@@ -12,11 +12,13 @@ html {
     min-height: 100%;
 }
 h1{
-    font-family: 'Rokkitt', serif;
-    font-size: 4.5vw;
-    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+	font-weight: normal;
+	letter-spacing: 0px;
     margin: 0;
     padding: 20px 0;
+	text-align: center;
 /*
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -27,10 +29,36 @@ h1{
 */
 }
 h2{
-    font-family: 'Rokkitt', serif;
-    font-size:40px;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+	font-weight: normal;
+	color: gray;
+	letter-spacing: 0px;
     margin: 0;
-    margin-top: 15px;
+    padding: 0;
+	text-align: center;
+}
+h2 #h2_link{
+	color: gray;
+	text-decoration: none;
+}
+h2 #h2_link:hover{
+	text-decoration: underline;
+}
+
+h3{
+	font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 0px;
+	
+}
+#contact_icon{
+	width: 25px;
+	vertical-align:-16px;
+	margin: 0;
+	padding: 10px 0;
+	border: 0;
 }
 #logo{
     width: 40px;
@@ -41,9 +69,16 @@ h2{
 }
 #face{
     border-radius: 50%;
-    width: 180px;
-    float: left;
-    margin: 0 25px 0 0;
+    width: 115px;
+    display: block;
+	margin: 0 auto;
+}
+
+#content{
+	margin: 0 auto;
+	width: 40%;
+/*	background-color: white;*/
+	padding: 50px;
 }
 
 #profile{
@@ -65,7 +100,6 @@ nav{
     text-align: center;
     background: #383838;
     padding: 10px 0;
-    margin: 0 0 auto 0;
     box-shadow: 0 -6px 10px 5px black;
     z-index: 100; 
 /*    position: sticky; */
@@ -84,8 +118,11 @@ nav{
     
 }
 #footer-icon{
-    width: 25px;
-    padding: 2px;
+    width: 24px;
+    padding: 0;
+	margin-top: 8px;
+	border: 0;
+	letter-spacing: 0;
 }
 
 
@@ -172,4 +209,55 @@ body {
 	text-align: center;
 	padding: 5px;
 	color: black;
+}
+
+.contact_li{
+	padding: 5px;
+	text-decoration: none;
+	font-size: 18px;
+	color: grey;
+}
+.contact_li:hover{
+	color: black;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #4c4c4c;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+ 	font-size: 14px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+	top: 100%;
+    left: 50%; 
+    margin-left: -100px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.about_me{
+	float: left;
+	width: 60%;
+	padding: 0 30px;
+	font-family: 'Montserrat', sans-serif;
+}
+.contact{
+	float: left;
+	width: 20%;
+	padding: 0 30px;
+	font-family: 'Montserrat', sans-serif;
 }

@@ -1,4 +1,5 @@
 var icons = document.querySelectorAll("img[id='footer-icon']");
+//var foot = document.querySelector("footer");
 function othersGrey(posInIcons){
     for (j=0; j<icons.length;j++){        
         if (j!==posInIcons){
@@ -14,6 +15,24 @@ var icon;
 var otherIcon;
 var i;
 var j;
+
+//foot.onmouseover=function(){
+//	for(j=0;j<icons.length;j++){
+//		otherIcon=icons.item(j);
+//        path=otherIcon.getAttribute("src");
+//        path=path.substring(0,path.indexOf("-"))+"-grey.png";
+//        otherIcon.setAttribute("src",path);
+//	}
+//}
+//foot.onmouseout=function(){
+//    for (j=0; j<icons.length;j++){        
+//            otherIcon=icons.item(j);
+//            path=otherIcon.getAttribute("src");
+//            path=path.substring(0,path.indexOf("-"))+"-wht.png";
+//            otherIcon.setAttribute("src",path);
+//        }
+//    }
+
 for(i = 0; i<icons.length;i++){
     icon = icons.item(i);
     icon.setAttribute("pos",i);
@@ -35,3 +54,4 @@ icons.item(4).onmouseover=function(){othersGrey(4);}
 icons.item(5).onmouseover=function(){othersGrey(5);}
 icons.item(6).onmouseover=function(){othersGrey(6);}
 icons.item(7).onmouseover=function(){othersGrey(7);}
+
