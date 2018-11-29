@@ -1,4 +1,5 @@
 var icons = document.querySelectorAll("img[id='footer-icon']");
+var cicons = document.querySelectorAll("img[id='contact-icon']");
 //var foot = document.querySelector("footer");
 function othersGrey(posInIcons){
     for (j=0; j<icons.length;j++){        
@@ -32,6 +33,14 @@ var j;
 //            otherIcon.setAttribute("src",path);
 //        }
 //    }
+for(i=0;i<cicons;i++){
+	icon=cicons.item(i);
+	icon.onmouseover=function(){
+		path=icon.getAttribute("src");
+		path=path.substring(0,path.indexOf("-"))+"-blk.png";
+		icon.setAttribute("src",path);
+	}
+}
 
 for(i = 0; i<icons.length;i++){
     icon = icons.item(i);
