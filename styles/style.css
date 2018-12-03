@@ -11,6 +11,15 @@ html {
 	position: relative;
     min-height: 100%;
 }
+p{
+	font-family: 'Montserrat', sans-serif;
+}
+a{
+	color: gray;
+}
+a:hover{
+	color:blue;
+}
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
@@ -76,11 +85,12 @@ h3{
     width: 115px;
     display: block;
 	margin: 0 auto;
+	margin-top: 40px;
 }
 
 #content{
 	margin: 0 auto;
-	width: 40%;
+	width: 45%;
 /*	background-color: white;*/
 	padding: 50px;
 	padding-top: 20px;
@@ -120,8 +130,7 @@ nav{
     color: white;
     padding: 7px 5px;
 	margin: 8px 5px;
-    letter-spacing: .05px;
-    
+    letter-spacing: .05px;  
 }
 #footer-icon{
     width: 24px;
@@ -249,8 +258,9 @@ body {
 	background-color: #ef8b00;
 }
 .download #desc{
-	height: 138px;
-	width:90%;
+	min-height: 138px;
+	font-size: 13px;
+	width:95%;
 }
 .download #filetype{
 	padding:0;
@@ -297,13 +307,15 @@ body {
 }
 .about_me{
 	float: left;
-	width: 60%;
-	padding: 0 30px;
+	width: 70%;
 	font-family: 'Montserrat', sans-serif;
+}
+.about_me p{
+	font-size: 15px;
+	margin-right: 13%;
 }
 .contact{
 	float: left;
-	width: 20%;
-	padding: 0 30px;
+	width: 30%;
 	font-family: 'Montserrat', sans-serif;
 }
