@@ -1,44 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" id="index">
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Ben Powell">
-        <meta name="description" content="An online portfolio/homepage for Benjamin Scott Powell, an OSU student in Computer Science & Engineering (CSE). It includes my resume, contact information, as well as descriptions and links to my projects.">
-        <title>Ben Powell</title>
-        <link href="styles/style.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="favicon.ico">
-        <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ben Powell">
+    <meta name="description" content="Describe the page">
+    <title>About Ben</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">    
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
     <body>
         <nav>
-        <a id="current" class="navElement" href="home.html">Home</a>
-        <a class="navElement" href="about.html">About</a>
-        <a class="navElement" href="contact.html">Contact</a>
-        <a class="navElement" href="shop.html">Shop</a>
-		<a class="navElement" href="downloads.html">Downloads</a>	
-        <img id="logo" src="images/logo-colors/9.png">
-        </nav>   
-        <header style="width: 100%">
-            <img  class="headerImage" src="images/index.jpg">
-            <h1 class="headerText" id="url">benspowell.github.io</h1>
-        </header>
-<!--
-        <div id="profile">
-            <img src="images/Ben.jpg" id="face">
-            <h2>Ben Powell</h2>
-            <h3>The Ohio State University</h3>
-            <h4>Computer Science &amp; Engineering Student <br><br><a href="mailto:benspowell@gmail.com">benspowell@gmail.com</a></h4>
-        </div>
--->
-<!--
-        <div id="about">
-        
-        </div>
--->
-        <footer>
-<!--            <h5>Thanks for visiting!<br>© 2018 Benjamin Powell. All rights reserved.</h5>-->
-            
+			<a id="current" class="navElement" href="home.html">Home</a>
+			<a class="navElement" href="projects.html">Projects</a>
+			<a class="navElement" href="downloads.html">Downloads</a>	
+			<a href="index.html"><img id="logo" src="images/logo-colors/9.png"></a>
+        </nav>     
+		<div id="content"> 
+			<img src="images/IMG_20180311_133244_3.jpg" id="face">
+			<h1>Ben Powell</h1>
+			<h2>Undergraduate <a id="h2_link" class="tooltip" href="https://cse.osu.edu/">CSE <span class="tooltiptext">Computer Science and Engineering</span></a> Student @ <a id="h2_link" class="tooltip" href="https://en.wikipedia.org/wiki/Ohio_State_University">OSU<span class="tooltiptext">THE Ohio State University</span></a></h2>
+			<br><hr>
+			<div class="about_me"><h3>About Me</h3></div>
+			<div class="contact"><h3>Contact</h3>
+			<a class="contact_li" href="mailto:benspowell@gmail.com"><img id="contact_icon" src="images/footer/mail-grey.png"> Email</a><br>
+			<a class="contact_li" href="http://github.com/benspowell"><img id="contact_icon" src="images/footer/github-grey.png"> GitHub</a><br>
+            <a class="contact_li" href="http://linkedin.com/in/benspowell"><img id="contact_icon" src="images/footer/linkedin-grey.png"> LinkedIn</a><br>
+			<a class="contact_li" href="http://facebook.com/benspowell"><img id="contact_icon" src="images/footer/fb-grey.png"> Facebook</a><br>
+            <a class="contact_li" href="http://instagram.com/benspowell"><img id="contact_icon" src="images/footer/insta-grey.png"> Instagram</a><br>
+			<a class="contact_li" href="https://twitter.com/bs_powell"><img id="contact_icon" src="images/footer/twitter-grey.png"> Twitter</a><br>
+				</div>
+		</div>
+		<footer>
             <a href="http://facebook.com/benspowell"><img id="footer-icon" src="images/footer/fb-wht.png"></a>
             <a href="http://instagram.com/benspowell"><img id="footer-icon" src="images/footer/insta-wht.png"></a>
             <a href="http://open.spotify.com/user/ben-pow"><img id="footer-icon" src="images/footer/spotify-wht.png"></a>
@@ -47,9 +40,8 @@
             <a href="mailto:benspowell@gmail.com"><img id="footer-icon" src="images/footer/mail-wht.png"></a>
             <a href="https://twitter.com/bs_powell"><img id="footer-icon" src="images/footer/twitter-wht.png"></a>
             <a href="index.html"><img id="footer-icon" src="images/footer/website-wht.png"></a>
-            
         </footer>
-        <script src="scripts/main.js"></script>
 		<script src="scripts/footer.js"></script>
+		<script src="scripts/main.js"></script>
     </body>
-</html> 
+</html>

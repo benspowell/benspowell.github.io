@@ -19,6 +19,7 @@ h1{
     margin: 0;
     padding: 20px 0;
 	text-align: center;
+	cursor: default;
 /*
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -37,13 +38,16 @@ h2{
     margin: 0;
     padding: 0;
 	text-align: center;
+	cursor: default;
 }
 h2 #h2_link{
 	color: gray;
 	text-decoration: none;
+	cursor: pointer;
 }
 h2 #h2_link:hover{
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 h3{
@@ -64,7 +68,7 @@ h3{
     width: 40px;
     display: inline;
     position: absolute;
-    top: 10px;
+    top: 8px;
     left: 10px;
 }
 #face{
@@ -79,6 +83,7 @@ h3{
 	width: 40%;
 /*	background-color: white;*/
 	padding: 50px;
+	padding-top: 20px;
 }
 
 #profile{
@@ -106,6 +111,7 @@ nav{
     top: 0; 
     left: 0; 
     right: 0;
+	position: sticky;
 }
 .navElement{
     font-family: 'Montserrat', sans-serif;
@@ -210,7 +216,47 @@ body {
 	padding: 5px;
 	color: black;
 }
+.download{
+	background-color: white;
+	overflow: auto;
+	padding: 0;
+	margin: 25px;
+}
+.download img{
+	height: 215px;
+	border: 1px solid #383838;
+	box-shadow: 6px 6px 20px -4px black;
+	margin: 25px;
+	float: left;
+	margin-right: 45px;
 
+}
+.download #button{
+	background-color: #ffb247;
+	color: #383838;
+	font-family: 'Montserrat', sans-serif;
+	font-size:15px;
+	text-decoration: none;
+	padding: 6px;
+	font-weight: bold;
+/*	border: 1px solid #383838;*/
+	border-radius: 4px;
+	box-shadow: 0 0 8px -2px black;
+	margin-bottom: 1px;
+	
+}
+.download #button:hover{
+	background-color: #ef8b00;
+}
+.download #desc{
+	height: 138px;
+	width:90%;
+}
+.download #filetype{
+	padding:0;
+	margin-top:8px;
+	font-size: 12px;
+}
 .contact_li{
 	padding: 5px;
 	text-decoration: none;
