@@ -2,12 +2,6 @@ html {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     background-color: #efefef;
-/*    height: 100%;*/
-/*
-    margin: 0;
-    padding: 0;
-    cursor: default;
-*/
 	position: relative;
     min-height: 100%;
 }
@@ -32,14 +26,6 @@ h1{
 	text-align: center;
 	cursor: default;
 	color: #383838;
-/*
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-*/
 }
 h2{
 	font-family: 'Montserrat', sans-serif;
@@ -143,8 +129,6 @@ nav{
 	border: 0;
 	letter-spacing: 0;
 }
-
-
 /*
 @keyframes navFade{
     0% {
@@ -166,15 +150,9 @@ nav{
     border: 1px solid red;
     cursor: default;
 */
-
 	color:gray;
 }
-
 #current{
-/* (BOX)
-	border: 2px solid;
-	margin: 6px 3px;
-*/
 	text-decoration: underline;
 }
 #current:hover, #current:focus{
@@ -213,14 +191,8 @@ header{
     transform: translate(-50%, -50%);
 }
 body {
-/*    height: 100%;*/
     margin: 0;
     padding: 0;
-/*
-    width: 900px;
-    
-    padding: 0 20px 20px 20px;
-*/
     margin: 0 auto;
 }
 
@@ -252,7 +224,6 @@ body {
 	text-decoration: none;
 	padding: 6px;
 	font-weight: bold;
-/*	border: 1px solid #383838;*/
 	border-radius: 4px;
 	box-shadow: 0 0 8px -2px black;
 	margin-bottom: 1px;
@@ -280,14 +251,10 @@ body {
 .contact_li:hover{
 	color: black;
 }
-
-/* Tooltip container */
 .tooltip {
     position: relative;
     display: inline-block;
 }
-
-/* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 200px;
@@ -297,15 +264,12 @@ body {
     padding: 5px;
     border-radius: 6px;
  	font-size: 14px;
-    /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
 	top: 100%;
     left: 50%; 
     margin-left: -100px;
 }
-
-/* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
