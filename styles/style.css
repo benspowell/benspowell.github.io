@@ -51,7 +51,7 @@ h2 #h2_link:hover{
 h3{
 	font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-	font-weight: bold;
+	font-weight: bolder;
 	letter-spacing: 0px;
 	
 }
@@ -80,7 +80,7 @@ h3{
 
 #content{
 	margin: 0 auto;
-	width: 45%;
+	width: 50%;
 /*	background-color: white;*/
 	padding: 50px;
 	padding-top: 20px;
@@ -111,7 +111,6 @@ nav{
     top: 0; 
     left: 0; 
     right: 0;
-	position: sticky;
 }
 .navElement{
     font-family: 'Montserrat', sans-serif;
@@ -161,12 +160,13 @@ nav{
 footer{
 	color: white;
 	box-shadow: 0 6px 10px 5px black;
-	position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 40px;
-    width: 100%;
-    overflow: hidden;
+	left: 0;
+    position: absolute;
+        margin: 0px;
+        
+        bottom: 0;
+        height: 40px;
+        width: 100%;
 	background-color: #383838;
 	text-align: center;
 }
@@ -202,19 +202,19 @@ body {
 	color: black;
 }
 .download{
-	background-color: white;
+/*	background-color: white;*/
 	overflow: auto;
 	padding: 0;
+        border-radius: 8px;
 	margin: 25px;
 }
 .download img{
-	height: 215px;
-	border: 1px solid #383838;
-	box-shadow: 6px 6px 20px -4px black;
+/*	height: 215px;*/
+        width: 25%;
+/*	border: 1px solid #383838;*/
+	box-shadow: 0px 0px 40px -8px black;
 	margin: 25px;
 	float: left;
-	margin-right: 45px;
-
 }
 .download #button{
 	background-color: #ffb247;
@@ -235,7 +235,9 @@ body {
 .download #desc{
 	min-height: 138px;
 	font-size: 13px;
-	width:95%;
+	width:60%;
+        margin-right: 20px;
+        float: right
 }
 .download #filetype{
 	padding:0;
@@ -286,4 +288,40 @@ body {
 	float: left;
 	width: 30%;
 	font-family: 'Montserrat', sans-serif;
+}
+.project{
+/*	background-color: white;*/
+	overflow: auto;
+	padding: 0;
+        border-radius: 8px;
+	margin: 25px;
+}
+.project img{
+/*	height: 215px;*/
+        width: 25%;
+/*	border: 1px solid #383838;*/
+	box-shadow: 0px 0px 40px -8px black;
+	margin: 25px;
+        border-radius: 6px;
+	float: left;
+}
+.project img:hover{
+    	box-shadow: 0px 0px 45px -2px black;
+}
+.project h3 a{
+    color: #383838;
+}
+.project h3 a:hover{
+    color:cornflowerblue;
+}
+.project h3 span{
+    font-size: 16px;
+    font-weight: normal;
+}
+.project #desc{
+	min-height: 138px;
+	font-size: 13px;
+	width:60%;
+        margin-right: 20px;
+        float: right
 }
