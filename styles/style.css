@@ -77,7 +77,9 @@ h3{
 	margin-top: 40px;
 	border: 10px solid white;
 }
-
+#face:hover{
+	border: 10px solid #e5e5e5;
+}
 #content{
 	margin: 0 auto;
 /*	width: 50%;*/
