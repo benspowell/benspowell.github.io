@@ -1,87 +1,12 @@
-<!DOCTYPE html>
-<html onmousemove="changeLogo()">
-<head>
-<link rel="icon" href="favicon.ico">
-<style>
-    html{
-    background-color: #e5e5e5;
-    }
-    img{
-    margin: 0;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    }
-    main{
-        display: block;
-        text-align: center;
-        margin: 0;
-        position: absolute;
-        top: 52%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    a{ 
-        color: #494949;
-        font-family: 'Open Sans', sans-serif;
-        font-size:15px;
-        font-weight: bold;
-        text-decoration: none;
-        padding: 2px 10px;
-        letter-spacing: .5px;
-    }
-    a:hover {
-    color: #c6c6c6;
-    cursor: default;
-    }
-</style>
-<title>Ben S. Powell</title>
-</head>
-<body>
-<img onmouseover="menuAppear()" src="images/logo-colors/0.png">
-<main></main>
-<script>
-    var logo = document.querySelector("img");
-    
-    var names=["Website","Resume","Downloads"];
-    var links=["downloads.html","resources/Benjamin-Powell.pdf","home.html"];
-    var linkName,link,p,a,menuUp=false;
-    
-    function changeLogo(){
-        if (!menuUp){
-            logo.setAttribute("src","images/logo-colors/"+Math.floor(Math.random()*16)+".png");
-        }
-    }
-    
-    function menuAppear(){
-        if (!menuUp){
-            menuUp=true;
-            var main = document.querySelector("main");
-            names.forEach(function (str){
-                a=document.createElement("A");
-                a.setAttribute("href",links.pop());
-                linkName=document.createTextNode(str);
-                a.appendChild(linkName);
-                main.appendChild(a);
-                });
-            fadeIn(main);
-        }
-    }
-    function fadeIn(el) {
-        el.style.opacity = 0;
-
-        var last = +new Date();
-        var tick = function() {
-        el.style.opacity = +el.style.opacity + (new Date() - last) / 400;
-        last = +new Date();
-
-        if (+el.style.opacity < 1) {
-        (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
-        }
-    };
-    tick();
-    }
-</script>
-</body>
+<!DOCTYPE HTML>
+<html style="background-color: #dddbd4">
+    <head>
+        <link rel="icon" href="favicon.ico">
+        <title>Visit my website</title>
+    </head>
+    <body>
+        <a href="http://benspowell.com/home.html">
+            <img style="display: block; width: 50%; margin: 100px auto;" src="text.png" onmouseover="this.src='bang.png'" onmouseout="this.src='text.png'" alt="benspowell.com"/>
+        </a>
+    </body>
 </html>
